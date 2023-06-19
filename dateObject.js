@@ -23,6 +23,3 @@ console.log(weekDate(inputdate))
 let inputdate2 = new Date()
 console.log(weekDate(inputdate2))
 
-
-//=============================================================
-//=============================================================
