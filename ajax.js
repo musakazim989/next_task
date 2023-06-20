@@ -13,3 +13,5 @@ function sendGetRequest() {
 
   xhr.send()
 }
+
+sendGetRequest()
