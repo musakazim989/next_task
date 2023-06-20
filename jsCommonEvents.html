@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Coordinates Alert</title>
+    <title>Key Press Alert</title>
+    <img
+      id="myImage"
+      src="https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149162009.jpg?w=2000"
+      onmouseover="changeImage()"
+      onmouseout="restoreImage()"
+    />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("click", function (event) {
+        var x = event.clientX
+        var y = event.clientY
+        alert("Clicked at coordinates (x, y): " + x + ", " + y)
+      })
+      document.addEventListener("keypress", function (event) {
+        alert("Key code: " + event.keyCode)
+      })
+
+      function changeImage() {
+        var img = document.getElementById("myImage")
+        img.src =
+          "https://images.immediate.co.uk/production/volatile/sites/21/2022/01/Norco-Shore-2-freeride-mountain-bike-35-4a8b779.jpg?quality=90&resize=620%2C413"
+      }
+
+      function restoreImage() {
+        var img = document.getElementById("myImage")
+        img.src =
+          "https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149162009.jpg?w=2000"
+      }
+    </script>
+  </body>
+</html>
