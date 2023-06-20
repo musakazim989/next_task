@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Click Example</title>
+  </head>
+  <body>
+    <button id="myButton">Click Me</button>
+    <p id="myParagraph">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita dicta
+      voluptate ipsum ea repellat inventore, qui reprehenderit deleniti
+      voluptates doloribus?
+    </p>
+
+    <script>
+      function changeParagraphText() {
+        var paragraph = document.getElementById("myParagraph")
+        paragraph.textContent = "Button Clicked!"
+      }
+
+      var button = document.getElementById("myButton")
+      button.addEventListener("click", changeParagraphText)
+    </script>
+  </body>
+</html>
